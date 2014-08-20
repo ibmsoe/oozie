@@ -39,8 +39,8 @@
     </organization>
 
     <properties>
-        <javaVersion>1.6</javaVersion>
-        <targetJavaVersion>1.6</targetJavaVersion>
+        <javaVersion>1.7</javaVersion>
+        <targetJavaVersion>1.7</targetJavaVersion>
 
         <distMgmtSnapshotsName>Apache Development Snapshot Repository</distMgmtSnapshotsName>
         <distMgmtSnapshotsUrl>https://repository.apache.org/content/repositories/snapshots</distMgmtSnapshotsUrl>
@@ -1040,8 +1040,8 @@
                 <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
-               <hadoop.version>2.3.0</hadoop.version>
-               <hadoop.auth.version>2.3.0</hadoop.auth.version>
+               <hadoop.version>2.4.1</hadoop.version>
+               <hadoop.auth.version>2.4.1</hadoop.auth.version>
                <pig.classifier>h2</pig.classifier>
                <sqoop.classifier>hadoop200</sqoop.classifier>
             </properties>
