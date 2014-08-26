@@ -13,6 +13,13 @@ Oozie is an extensible, scalable and reliable system to define, manage, schedule
   * Extensible and pluggable architecture to allow arbitrary grid programming paradigms.
   * Authentication, authorization, and capacity-aware load throttling to allow multi-tenant software as a service.
 
+Building
+--------
+
+To build Oozie, cd to the oozie source directory and run the following command:
+
+  ./bin/mkdistro.sh -DskipTests -Phadoop-2
+
 Oozie Overview
 ----------
 
