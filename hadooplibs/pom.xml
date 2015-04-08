@@ -70,6 +70,18 @@
 
     <profiles>
         <profile>
+            <id>hadoop-260</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <modules>
+                <module>hadoop-260</module>
+                <module>hadoop-test-260</module>
+                <module>hadoop-distcp-260</module>
+                <module>hadoop-utils-260</module>
+            </modules>
+        </profile>
+     <profile>
             <id>hadoop-3</id>
             <activation>
                 <activeByDefault>false</activeByDefault>

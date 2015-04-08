@@ -1150,6 +1150,18 @@
             </properties>
         </profile>
         <profile>
+            <id>hadoop-260</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+               <hadoop.version>2.6.0</hadoop.version>
+               <hadoop.auth.version>2.6.0</hadoop.auth.version>
+               <pig.classifier>h2</pig.classifier>
+               <sqoop.classifier>hadoop200</sqoop.classifier>
+            </properties>
+        </profile>
+        <profile>
             <id>hadoop-3</id>
             <activation>
                 <activeByDefault>false</activeByDefault>
