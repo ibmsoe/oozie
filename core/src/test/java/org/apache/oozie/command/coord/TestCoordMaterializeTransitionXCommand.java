@@ -668,9 +668,13 @@ public class TestCoordMaterializeTransitionXCommand extends XDataTestCase {
         CoordSubmitXCommand sc = new CoordSubmitXCommand(conf);
         String jobId = sc.call();
 
-        Date currentTime = new Date();
-        Date startTime = org.apache.commons.lang.time.DateUtils.addMonths(currentTime, -3);
-        Date endTime = org.apache.commons.lang.time.DateUtils.addMonths(currentTime, 3);
+        Calendar cal = Calendar.getInstance(DateUtils.getOozieProcessingTimeZone());
+        cal.add(Calendar.MONTH, -3);
+        Date startTime = cal.getTime();
+        cal = Calendar.getInstance(DateUtils.getOozieProcessingTimeZone());
+        cal.add(Calendar.MONTH, 3);
+        Date endTime = cal.getTime();
+
         CoordinatorJobBean job = CoordJobQueryExecutor.getInstance().get(CoordJobQuery.GET_COORD_JOB, jobId);
         assertEquals(job.getLastActionNumber(), 0);
 
