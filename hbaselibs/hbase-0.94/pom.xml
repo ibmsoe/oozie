@@ -73,7 +73,7 @@
                 </exclusion>
                 <exclusion>
                     <groupId>org.apache.thrift</groupId>
-                    <artifactId>thrift</artifactId>
+                    <artifactId>libthrift</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
